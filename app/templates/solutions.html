@@ -1,0 +1,232 @@
+<html><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartFlow - Solutions</title>
+    
+    <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #3b82f6;
+      --dark: #1e293b;
+      --light: #f8fafc;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    body {
+      background: var(--light);
+      color: var(--dark);
+    }
+    
+    .solutions-hero {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    
+    .solutions-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .solutions-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .solutions-container {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    
+    .solution-category {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .category-title {
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .solution-list {
+      list-style: none;
+    }
+    
+    .solution-list li {
+      margin-bottom: 1rem;
+      padding: 0.5rem 0;
+      transition: transform 0.2s;
+    }
+    
+    .solution-list li:hover {
+      transform: translateX(10px);
+      color: var(--primary);
+      cursor: pointer;
+    }
+    
+    .blog-section {
+      background: white;
+      padding: 4rem 2rem;
+      margin-top: 4rem;
+    }
+    
+    .blog-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .blog-card {
+      background: var(--light);
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .blog-content {
+      padding: 1.5rem;
+    }
+    
+    .blog-content h3 {
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .blog-content p {
+      color: #64748b;
+      line-height: 1.6;
+    }
+    
+    .blog-image {
+      width: 100%;
+      height: 200px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    </style>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+    <div class="solutions-hero">
+      <h1>Solutions for Every Team</h1>
+      <p>Discover tailored solutions designed to meet the unique needs of your organization</p>
+    </div>
+    
+    <div class="solutions-container">
+      <div class="solutions-grid">
+        <div class="solution-category">
+          <h2 class="category-title">Task Management</h2>
+          <ul class="solution-list">
+            <li>Project Management</li>
+            <li>CRM & Transaction</li>
+            <li>Support Team</li>
+            <li>Whiteboard</li>
+            <li>Communications</li>
+          </ul>
+        </div>
+    
+        <div class="solution-category">
+          <h2 class="category-title">For Teams</h2>
+          <ul class="solution-list">
+            <li>Marketing</li>
+            <li>Sales & Logistics</li>
+            <li>HR</li>
+            <li>Teamwork Management</li>
+            <li>Product</li>
+          </ul>
+        </div>
+    
+        <div class="solution-category">
+          <h2 class="category-title">By Size</h2>
+          <ul class="solution-list">
+            <li>Enterprise</li>
+            <li>Startups</li>
+            <li>SMB</li>
+            <li>Nonprofit</li>
+            <li>Operations</li>
+          </ul>
+        </div>
+    
+        <div class="solution-category">
+          <h2 class="category-title">Ready-made Solutions</h2>
+          <ul class="solution-list">
+            <li>Help Desk</li>
+            <li>Operations</li>
+            <li>Customer Support</li>
+            <li>Team Collaboration</li>
+            <li>Project Tracking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="blog-section">
+      <h2 class="blog-title">Latest from Blog</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-image">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <h3>5 Stages of Task Management</h3>
+            <p>Learn about the essential stages of effective task management and how to implement them in your workflow.</p>
+          </div>
+        </div>
+    
+        <div class="blog-card">
+          <div class="blog-image">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <h3>How to Set Up a Classic CRM in Planfix</h3>
+            <p>A comprehensive guide to implementing and optimizing your CRM system for maximum efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </body></html>
